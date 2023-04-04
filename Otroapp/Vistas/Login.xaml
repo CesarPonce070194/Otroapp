@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="Otroapp.Vistas.Login">
+    <Grid BackgroundColor="Black">
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid VerticalOptions="Center" Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <forms:AnimationView x:Name="animacion" Grid.Row="0"
+                                 Animation="gato.json"
+                                 HeightRequest="250"
+                                 WidthRequest="250"
+                                 AutoPlay="False"
+                                 RepeatMode="Infinite"
+                                 VerticalOptions="Center"/>
+                <Label Grid.Row="1" Text="OTROAPP"
+                   TextColor="White" HorizontalTextAlignment="Center"
+                   FontSize="40" FontAttributes="Bold"/>
+
+            </Grid>
+            <StackLayout Grid.Row="1">
+                <StackLayout Orientation="Horizontal">
+                    <Image WidthRequest="25" Source="https://i.ibb.co/nwnx6bS/corazon.png"/>
+                    <Entry Placeholder="Correo"
+                       x:Name="txtlogin"
+                       PlaceholderColor="#7f7f7f"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       WidthRequest="300"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image WidthRequest="25" Source="https://i.ibb.co/tXL7HGY/pass.png"/>
+                    <Entry Placeholder="Contraseña"
+                       x:Name="txtcontraseña"
+                       PlaceholderColor="#7f7f7f"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       WidthRequest="300"/>
+                </StackLayout>
+                <Button Text="Iniciar"
+                    TextColor="Black"
+                    BackgroundColor="#ffd33f"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    CornerRadius="30"/>
+                <Button Text="Crear cuenta"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    TextTransform="None"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" Grid.Row="2"
+                     Orientation="Horizontal">
+                <Label Text="Una app de"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#404040"/>
+                <Label Text="Jade729"
+                   HorizontalTextAlignment="Center"
+                   TextColor="#ffd340"/>
+
+            </StackLayout>
+        </Grid>
+    </Grid>
+    
+</ContentPage>

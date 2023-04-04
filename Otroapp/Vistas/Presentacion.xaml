@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Otroapp.Vistas.Presentacion">
+    <Grid BackgroundColor="#151515">
+        <StackLayout VerticalOptions="CenterAndExpand"                 
+                 >
+            <Image Source="large-otro.png"
+                   HeightRequest="150" x:Name="logo"/>
+            <Label Text="OTROAPP" TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   FontSize="30"
+                   FontAttributes="Bold"/>
+            <Label Text="By" TextColor="#f8f9fa"
+                   HorizontalOptions="Center"
+                   HeightRequest="100"/>
+            <Label Text="J A D E  7 2 9" TextColor="#ec4827"
+                   FontSize="14"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+        </StackLayout>
+    </Grid>
+    
+    
+</ContentPage>
